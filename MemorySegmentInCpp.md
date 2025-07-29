@@ -40,18 +40,18 @@ Low addr
 
 #### ***Read-only data***
 
-Linux: Usually **.rodata (read-only data)** or merged with **.text**
-Windows: .rdata
+Linux: Usually **.rodata (read-only data)** or merged with **.text**  
+Windows: .rdata  
 
 #### ***Import/export***
-Linux: **.plt** / **.got** for dynamic linking
-Windows: **.idata** (import table), **.edata** (export table)
+Linux: **.plt** / **.got** for dynamic linking  
+Windows: **.idata** (import table), **.edata** (export table)  
 
 #### ***Naming***
 
-**.bss, .data, .text** are common across both
-Read-only data section name differs (**.rodata** vs **.rdata**)
+**.bss, .data, .text** are common across both  
+Read-only data section name differs (**.rodata** vs **.rdata**)  
 
 #### ***Heap/Stack behavior***
 
-Conceptually identical, managed differently by OS memory allocators
+Conceptually identical, managed differently by OS memory allocators  
