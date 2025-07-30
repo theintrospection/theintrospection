@@ -1,5 +1,5 @@
 Linux (ELF) memory layout
-
+```
 High addresses  
 ┌───────────────────────┐  
 │       Stack            │  <- grows downward  
@@ -15,9 +15,9 @@ High addresses
 │ .text  (code)          │  
 └───────────────────────┘  
 Low addresses  
-
+```
 Windows (PE) memory layout
-
+```
 High addr  
 ┌───────────────┐  
 │ Stack         │ ↓ grows downward  
@@ -34,7 +34,7 @@ High addr
 │ .text         │  
 └───────────────┘  
 Low addr  
-
+```
  
 ## **Key Differences**
 

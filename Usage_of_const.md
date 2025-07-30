@@ -123,6 +123,21 @@ int arr2[Size2]; // ❌ error in C++ (size not known at comlile time)
 ### 🟡 You may also confused about why `int arr2[size2]` throws an error. Isn't `size2` is already initialized?
 
 > In standard C++ (before C++ 14's relaxed rules for some contexts), the size of a built-in array must be a **comlile-time constant expression** -- something the compiler can determine without runing your program.
+```
+          ┌──▶ Is it a literal number? ───▶ YES ✅ allowed
+          │
+Variable ─┤
+          │
+          └──▶ Is it declared constexpr? ─▶ YES ✅ allowed
+                               │
+                               └──▶ NO
+                                     │
+                                     └──▶ Is it a const with a compile-time expression? 
+                                           │
+                                           ├──▶ YES ✅ allowed
+                                           └──▶ NO ❌ not allowed (use std::vector instead)
+```
+
 
 ___waiting for completion...___
 
