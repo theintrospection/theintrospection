@@ -1,2 +1,1 @@
-My Daily Goals:
-    One commit or a concept of Cpp.
+路还很长，请不要着急。
